@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Agbalumo&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin:0;
@@ -10,17 +11,11 @@
 
 body {
     line-height: 1.6rem;
-    background-color: black;
+    background-color: #f9f9f9;
 }
 
 header {
-    box-shadow: 0 2px 5x rgba(0,0,0,0.1);
-    background-color:  #f9f9f9;
-    margin-top: 1rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
-    border-top-right-radius: 1rem;  
-    border-top-left-radius: 1rem; 
+    box-shadow: 0 2px 5px #999;
 }
 
 nav {
@@ -28,22 +23,20 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width:  1200px;
-    margin: 0 auto;
 }
 
 .logo {
     font-size: 30px;
-    font-weight: 900;
-    font-style: italic;
+    font-weight: 500;
     color: #c60003;
-    margin-left: 1rem;
+    font-family: Agbalumo;
 }
 
 .nav-links{
     display: flex;
     list-style: none;
     gap: 2rem;
+    font-weight: 700; 
 }
 
 .nav-box-redes-sociais {
@@ -60,8 +53,8 @@ nav {
 
 #hero{
     padding-top: 2rem;
-    min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Assets/A\ modern\ artistic\ gy.png');
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url('Assets/clube-6.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -69,15 +62,18 @@ nav {
     justify-content:center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #f9f9f9;
     padding: 0 1rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
+}
+
+#hero img{
+    margin-top: 5px;
 }
 
 #hero h1 {
+    font-family: Merienda;
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 5rem;
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -89,24 +85,50 @@ nav {
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
+#hero h2{
+    font-family: Merienda;
+}
+
 #hero p {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.nav-box-redes-sociais1{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.facebook img{
+    width: 51px;
+    height: 51px;
+}
+
+.instagram img{
+    width: 51px;
+    height: 51px;
+    object-fit: fill;
+}
+
+.whatsapp img{
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
 }
 
 #quemsomos {  
     background: #f9f9f9;
     color: white;
     padding: 1rem 1rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
 }
 
 #quemsomos h2 {
     text-align: center;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     color: #333;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 2rem;
 }
 
@@ -159,21 +181,26 @@ nav {
     line-height: 1.8;
 }
 
+.valores-valor{
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
 #contato {
     background-color: #f9f9f9;  
     color: #333;
     padding: 1rem 1rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
-    border-bottom-right-radius: 1rem;  
-    border-bottom-left-radius: 1rem; 
-    margin-bottom: 1rem; 
 }
 
 #contato h2{
     text-align: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #contato p{
@@ -181,10 +208,64 @@ nav {
     margin-top: 0.5rem;
 }
 
+#Galeria {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1rem 1rem;
+}
+
+#Galeria h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#Galeria h3{
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#Galeria p{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.galeria-cartao {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.4rem;
+    margin-top: 1rem;
+}
+
+.galeria-cartao img{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
 .nav-box-redes-sociais{
     display: flex;
     justify-content:center;
     margin-top: 2rem;
+}
+
+.mapa iframe{
+    margin-top: 5px;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 0 3px #999;
 }
 
 footer{
@@ -194,7 +275,7 @@ footer{
     padding: 1rem;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 630px) {
     nav {
         flex-direction: column;
         padding: 1rem;
